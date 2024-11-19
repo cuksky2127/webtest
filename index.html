@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>고려사이버대학교 홍보 웹앱</title>
+  <!-- Bootstrap CSS 링크 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* 커스텀 스타일 */
+    body {
+      background-color: #f8f9fa;
+    }
+    .hero-section {
+      background-image: url('https://via.placeholder.com/1600x600');
+      background-size: cover;
+      color: white;
+      text-align: center;
+      padding: 100px 0;
+    }
+    .feature-card {
+      transition: transform 0.3s;
+    }
+    .feature-card:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 네비게이션 바 -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">고려사이버대학교</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">홈</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#features">특징</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">연락처</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 히어로 섹션 -->
+  <section class="hero-section">
+    <div class="container">
+      <h1 class="display-4">고려사이버대학교</h1>
+      <p class="lead">온라인 교육의 새로운 미래를 여는 곳</p>
+      <a href="#features" class="btn btn-primary btn-lg">학과 소개 보기</a>
+    </div>
+  </section>
+
+  <!-- 특징 섹션 -->
+  <section id="features" class="container py-5">
+    <h2 class="text-center mb-4">고려사이버대학교의 특징</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card feature-card">
+          <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="학습의 자유">
+          <div class="card-body">
+            <h5 class="card-title">학습의 자유</h5>
+            <p class="card-text">시간과 장소에 구애받지 않는 유연한 학습 환경을 제공합니다.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card feature-card">
+          <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="최첨단 교육 기술">
+          <div class="card-body">
+            <h5 class="card-title">최첨단 교육 기술</h5>
+            <p class="card-text">IT 기반의 최신 교육 시스템으로 몰입감 있는 학습을 제공합니다.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card feature-card">
+          <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="글로벌 네트워크">
+          <div class="card-body">
+            <h5 class="card-title">글로벌 네트워크</h5>
+            <p class="card-text">국제적 경험과 실무 중심의 교육으로 글로벌 인재로 성장할 수 있습니다.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 연락처 섹션 -->
+  <section id="contact" class="bg-light py-5">
+    <div class="container text-center">
+      <h2 class="mb-4">연락처</h2>
+      <p>고려사이버대학교에 대해 궁금한 사항이 있으시면 언제든지 연락주세요!</p>
+      <p><strong>이메일:</strong> info@kcu.ac.kr</p>
+      <p><strong>전화:</strong> 02-3476-5860</p>
+      <a href="mailto:info@kcu.ac.kr" class="btn btn-primary">이메일 보내기</a>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS 링크 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
